@@ -57,7 +57,7 @@ def html_encoding(string)
 end
 
 def url_encoding(url)
-	return string.htmlunescape
+	return URI(url).to_s
 end
 
 def url_decoding(url)
